@@ -1,22 +1,12 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# Clear npm cache
+npm cache clean --force
 
+# Remove node_modules and package-lock.json
+rmdir /s /q node_modules
+del package-lock.json
+
+# Install vite locally with a specific version known to work with Node.js
+npm install vite@4.5.2 --save-dev
 node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
+node_modules
+node_modules
